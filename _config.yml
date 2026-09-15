@@ -1,0 +1,22 @@
+# General info
+title: My blog
+description: My writings
+url: "https://manuelcitarella.github.io/Manucit.dev/"
+baseurl: ""
+
+# Author
+author:
+  name: Manuel
+  email: manuelcitarella99@gmail.com
+
+theme: minima
+
+kramdown:
+  input: GFM 
+  syntax_highlighter: rouge 
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
