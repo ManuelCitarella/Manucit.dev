@@ -1,7 +1,6 @@
 # General info
 title: My blog
 description: My writings
-theme: minima
 baseurl: "/Manucit.dev"
 
 exclude:
