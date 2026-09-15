@@ -1,13 +1,11 @@
 # General info
 title: My blog
+author: 
+  name: Manuel
+  email: manuelcitarella99@gmail.com
 description: My writings
 url: "https://manuelcitarella.github.io/"
 baseurl: "/Manucit.dev"
-
-# Author
-author:
-  name: Manuel
-  email: manuelcitarella99@gmail.com
 
 theme: minima
 
