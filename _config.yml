@@ -1,8 +1,8 @@
 # General info
 title: My blog
 description: My writings
-url: "https://manuelcitarella.github.io/Manucit.dev/"
-baseurl: ""
+url: "https://manuelcitarella.github.io/"
+baseurl: "/Manucit.dev"
 
 # Author
 author:
