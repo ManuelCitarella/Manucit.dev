@@ -1,17 +1,8 @@
 # General info
 title: My blog
-author: 
-  name: Manuel
-  email: manuelcitarella99@gmail.com
 description: My writings
-url: "https://manuelcitarella.github.io/"
-baseurl: "/Manucit.dev"
-
 theme: minima
-
-kramdown:
-  input: GFM 
-  syntax_highlighter: rouge 
+baseurl: "/Manucit.dev"
 
 exclude:
   - README.md
