@@ -1,7 +1,7 @@
 # General info
-title: My blog
+title: Manuelito dev writings
 description: My writings
-baseurl: "/Manucit.dev"
+baseurl: ""
 
 exclude:
   - README.md
