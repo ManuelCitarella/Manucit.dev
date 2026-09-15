@@ -3,3 +3,6 @@
 
 # PromptOps session assets
 .promptops-assets/
+
+# Claude
+.claude/
