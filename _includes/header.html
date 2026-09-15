@@ -1,3 +1,21 @@
 <header class="site-header">
 	<a href="{{ '/' | relative_url }}" class="site-logo">Manuelito > Dev </a>
+	<button id="theme-toggle" aria-label="Toggle dark mode">0</button>
 </header>
+
+<script>
+  (function () {
+    var btn = document.getElementById('theme-toggle');
+    var root = document.documentElement;
+    var setIcon = function () {
+      btn.textContent = root.getAttribute('data-theme') === 'dark' ? '1' : '0';
+    };
+    setIcon();
+    btn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      setIcon();
+    });
+  })();
+</script>

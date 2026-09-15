@@ -5,14 +5,43 @@
   padding: 0;
 }
 
+:root {
+  --color-text: #1a1a1a;
+  --color-bg: #fafafa;
+  --color-heading: #111;
+  --color-border: #eaeaea;
+  --color-border-dashed: #e5e5e5;
+  --color-muted: #888;
+  --color-nav: #666;
+  --color-link: #0066cc;
+}
+
+[data-theme="dark"] {
+  --color-text: #e5e5e5;
+  --color-bg: #121212;
+  --color-heading: #f5f5f5;
+  --color-border: #2a2a2a;
+  --color-border-dashed: #333;
+  --color-muted: #999;
+  --color-nav: #aaa;
+  --color-link: #4da3ff;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.7;
   max-width: 680px;
   margin: 0 auto;
   padding: 40px 20px;
-  color: #1a1a1a;
-  background-color: #fafafa;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 /* Header & Nav */
@@ -22,20 +51,36 @@ header {
   align-items: center;
   padding-bottom: 20px;
   margin-bottom: 50px;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid var(--color-border);
 }
 
 header a {
   font-weight: 600;
-  color: #111;
+  color: var(--color-heading);
   text-decoration: none;
   font-size: 1.1rem;
 }
 
 header nav a {
   font-weight: 400;
-  color: #666;
+  color: var(--color-nav);
   font-size: 0.95rem;
+}
+
+#theme-toggle {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 1;
+  color: var(--color-heading);
+}
+
+#theme-toggle:hover {
+  border-color: var(--color-nav);
 }
 
 /* Titoli */
@@ -44,7 +89,7 @@ h1 {
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 30px;
-  color: #111;
+  color: var(--color-heading);
 }
 
 /* Lista Articoli */
@@ -58,11 +103,11 @@ li {
   align-items: baseline;
   margin-bottom: 16px;
   padding-bottom: 12px;
-  border-bottom: 1px dashed #e5e5e5;
+  border-bottom: 1px dashed var(--color-border-dashed);
 }
 
 li a {
-  color: #0066cc;
+  color: var(--color-link);
   text-decoration: none;
   font-size: 1.05rem;
   font-weight: 500;
@@ -73,7 +118,7 @@ li a:hover {
 }
 
 li span, li small {
-  color: #888;
+  color: var(--color-muted);
   font-size: 0.85rem;
   font-family: monospace;
 }
@@ -81,9 +126,25 @@ li span, li small {
 /* Footer */
 footer {
   margin-top: 80px;
-  padding-top: 20px;
-  border-top: 1px solid #eaeaea;
+  padding: 16px 0;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 0.85rem;
-  color: #888;
-  text-align: center;
+  color: var(--color-muted);
+}
+
+.site-footer-social {
+  display: flex;
+  gap: 14px;
+}
+
+.site-footer-social a {
+  color: var(--color-muted);
+  display: flex;
+}
+
+.site-footer-social a:hover {
+  color: var(--color-heading);
 }
