@@ -1,0 +1,15 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #111;
+  background: #fff;
+}
+
+a { color: #0066cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-header { display: flex; justify-space-between; margin-bottom: 40px; }
+.post-meta { color: #666; font-size: 0.9em; }
