@@ -1,7 +1,7 @@
 # General info
 title: Manuelito dev writings
 description: My writings
-baseurl: "/Manucit.dev"
+baseurl: "/Manuelito.dev"
 
 collections:
   projects:
