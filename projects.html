@@ -1,0 +1,19 @@
+---
+layout: default
+title: Personal Projects
+permalink: /projects/
+---
+
+<h1>Personal Projects</h1>
+
+<div class="timeline">
+  {% assign years = site.projects | sort: "year" | reverse %}
+  {% for project in years %}
+    <div class="timeline-item">
+      <div class="timeline-year">{{ project.year }}</div>
+      <div class="timeline-content">
+        {{ project.content }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

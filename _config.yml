@@ -3,6 +3,10 @@ title: Manuelito dev writings
 description: My writings
 baseurl: "/Manucit.dev"
 
+collections:
+  projects:
+    output: false
+
 exclude:
   - README.md
   - Gemfile
