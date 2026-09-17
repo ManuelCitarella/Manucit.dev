@@ -24,6 +24,8 @@
   --nb-accent: #ffde59;
   --nb-accent-2: #a6f0c6;
   --nb-header-text: #000;
+  --nb-header-bg: var(--nb-accent);
+  --nb-button-bg: var(--color-surface);
 }
 
 [data-theme="dark"] {
@@ -39,9 +41,11 @@
 
   --nb-border-color: #fff;
   --nb-shadow-color: #fff;
-  --nb-accent: #ffe600;
+  --nb-accent: #ffde59;
   --nb-accent-2: #ff6b6a;
-  --nb-header-text: #000;
+  --nb-header-text: #fff;
+  --nb-header-bg: var(--color-surface);
+  --nb-button-bg: var(--nb-accent);
 }
 
 body {
@@ -68,7 +72,7 @@ header {
   align-items: center;
   padding: 14px 20px;
   margin-bottom: 50px;
-  background: var(--nb-accent);
+  background: var(--nb-header-bg);
   border: var(--nb-border) solid var(--nb-border-color);
   box-shadow: var(--nb-shadow);
 }
@@ -98,7 +102,7 @@ header nav a {
 #contacts-link {
   font-family: "SF Mono", Menlo, Consolas, monospace;
   font-weight: 700;
-  background: var(--color-surface);
+  background: var(--nb-button-bg);
   border: var(--nb-border) solid var(--nb-border-color);
   box-shadow: 3px 3px 0 var(--nb-shadow-color);
   border-radius: 0;
@@ -106,7 +110,7 @@ header nav a {
   font-size: 1rem;
   cursor: pointer;
   line-height: 1;
-  color: var(--nb-border-color);
+  color: #000;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
